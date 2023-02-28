@@ -84,16 +84,16 @@ def dingding(result, now_time, report_image_path=None, log_path=None):
     # logging_util.debug(response.text)
 
 
-def error_dingding():
+def error_dingding(atMobiles=None, atUserIds=None):
     url = _get_secret_url()
 
     dd_error_content = {
         "at": {
             "atMobiles": [
-                "15879107443"
+                str(atMobiles)
             ],
             "atUserIds": [
-                "颜潮锋"
+                str(atUserIds)
             ],
             "isAtAll": False
         },

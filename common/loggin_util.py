@@ -35,7 +35,7 @@ class LoggingUtil:
             "fromaddr": "1847572557@qq.com",
             "toaddrs": "1847572557@qq.com",
             "subject": "ERROR_LOG",
-            "credentials": ("1847572557@qq.com", "yxfeexheqjxsejde"),
+            "credentials": ("1847572557@qq.com", "password"),
             "secure": None,
             "timeout": 1.0
         }
