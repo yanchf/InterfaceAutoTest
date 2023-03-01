@@ -38,15 +38,18 @@ class RequestUtil:
                 params_data = data["params"]
 
                 self.logging_util.info(url)
-                self.logging_util.info(json_data)
+                self.logging_util.info(data["json_data"])
+                self.logging_util.info(data["params"])
 
                 responses = self.session.request(method=data["method"], url=url, json=json_data, params=params_data, **self.kwargs)
             elif data["x_www_form_urlencoded_data"] is not None:
                 url = data["api"]
                 data_data = json.loads(data["x_www_form_urlencoded_data"])
                 params_data = data["params"]
+
                 self.logging_util.info(url)
-                self.logging_util.info(data_data)
+                self.logging_util.info(data["x_www_form_urlencoded_data"])
+                self.logging_util.info(data["params"])
 
                 responses = self.session.request(method=data["method"], url=url, data=data_data, params=params_data, **self.kwargs)
             else:

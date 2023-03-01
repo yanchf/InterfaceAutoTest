@@ -14,7 +14,8 @@ B.使用方法
     3.更换pip源
     4.再根目录下打开cmd，输入pip install -r requirements.txt。初始化项目环境
     5.在testcase_data/excel/testcase_api.xlsx 中编写接口相关测试数据
-    6.在cmd界面中输入run_test.py 或者 python run_test.py 运行项目
+    6.config.py中配置钉钉机器人相关
+    7.在cmd界面中输入run_test.py 或者 python run_test.py 运行项目
     
 
 C.*要点须知
